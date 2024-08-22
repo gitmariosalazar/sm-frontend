@@ -1,0 +1,221 @@
+/* Styles for the overall layout */
+.analytics {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Title styles */
+.title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* Select options styles */
+.select-options {
+  margin-bottom: 20px;
+}
+
+.select-options .title {
+  font-size: 1.2em;
+}
+
+.select-options .options ul {
+  list-style: none;
+  padding: 0;
+}
+
+.select-options .options li {
+  margin-bottom: 10px;
+}
+
+/* Main box styles */
+.box-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboards {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dashboard and graphics styles */
+.graphics-d {
+  margin-bottom: 20px;
+}
+
+.graphics-d .title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Chart containers */
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.charts .donut-chart {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Graphics container styles */
+.graphics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.db {
+  flex: 1;
+  min-width: 300px;
+}
+
+.db1 {
+  border: 2px solid rgb(33, 32, 32);
+  border-radius: 5px;
+}
+
+.text-chart {
+  font-size: 12px;
+  padding: 10px;
+  color: aquamarine;
+}
+
+.labels-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.labels-info ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+}
+
+.labels-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+.title-chart {
+  padding: 15px;
+  font-weight: bold;
+}
+
+.labels-info span {
+  margin-right: 8px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.filter-actions {
+  width: 100%;
+  display: flex;
+  gap: 5x;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: -2px;
+}
+
+.title-analitycs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  color: aqua;
+  font-weight: bold;
+}
+
+.no-token {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.nt-cont {
+  align-content: center;
+  text-align: center;
+}
+
+.nt-cont p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 13px;
+}
+
+.nt-cont div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 15px;
+}
+
+@media (max-width: 975px) {
+  .graphics-container {
+    flex-direction: column;
+  }
+
+  .db {
+    min-width: 100%;
+  }
+  .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .items-center {
+    margin-left: 25px;
+  }
+
+  .filter-actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .filter-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2em;
+  }
+
+  .select-options .title {
+    font-size: 1em;
+  }
+
+  .select-options .options li {
+    font-size: 0.9em;
+  }
+}

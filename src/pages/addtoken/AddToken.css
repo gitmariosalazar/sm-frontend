@@ -1,0 +1,37 @@
+.box-input,
+.box-input-a,
+.input-number-a {
+  padding: 10px;
+}
+
+.box-input p {
+  color: gray;
+  font-size: 13px;
+}
+
+.box-input-a p {
+  color: gray;
+  font-size: 13px;
+  margin-top: -5px;
+}
+
+.input-number-a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+}
+
+.in {
+  margin-top: 10px;
+}
+
+.input-number-a p {
+  padding: 10px;
+}
+
+@media (max-width: 492px) {
+  .input-number-a p {
+    margin-top: 35px;
+  }
+}

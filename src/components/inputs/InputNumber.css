@@ -1,0 +1,63 @@
+/* InputLabel.css */
+
+/* Contenedor del campo de entrada y su etiqueta */
+.input-wrapper {
+  position: relative;
+  background-color: #000; /* Fondo negro */
+  padding: 10px; /* Opcional: Añadir relleno para una mejor apariencia */
+  border-radius: 4px; /* Opcional: Bordes redondeados */
+}
+
+/* Estilo del campo de entrada */
+.input-box {
+  width: 100%;
+  padding: 10px; /* Ajustar el relleno según sea necesario */
+  border: none;
+  background: #000; /* Fondo negro */
+  color: #fff; /* Color del texto en blanco */
+  border-radius: 4px; /* Opcional: Bordes redondeados para coincidir con el contenedor */
+}
+
+.input-box.error {
+  border: 1px solid red; /* Opcional: Borde rojo para el estado de error */
+}
+
+/* Estilo de la etiqueta */
+.input-label-text {
+  color: #fff; /* Color del texto de la etiqueta en blanco */
+  margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+  display: block;
+}
+
+/* Contenedores de íconos */
+.icon-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-left {
+  left: 10px;
+}
+
+.icon-right {
+  right: 10px;
+}
+
+/* Estilo para los íconos */
+.icon-image {
+  width: 20px; /* Ajustar el tamaño del ícono según sea necesario */
+  height: 20px;
+}
+
+/* Estilo del mensaje de error */
+.error-message-text {
+  color: red;
+  font-size: 0.875em; /* Tamaño de fuente más pequeño para los mensajes de error */
+  margin-top: 5px;
+}
+
+/* Opcional: Ajustar el espaciado entre el campo de entrada y el mensaje de error */
+.input-wrapper {
+  margin-bottom: 20px;
+}

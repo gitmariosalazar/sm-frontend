@@ -1,0 +1,338 @@
+.github {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-container {
+  width: 900px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-title h3 {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.key {
+  transform: rotate(125deg);
+}
+
+.icon-key {
+  transform: rotate(125deg);
+}
+
+.box-newtoken {
+  display: flex;
+}
+
+.text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 40%;
+}
+
+.text p {
+  padding: 8px;
+}
+
+.box-right {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  padding: 5px;
+}
+
+.btn-new-token {
+  border: 1px solid green;
+  padding: 5px;
+  color: green;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+}
+
+.btn-clear-token {
+  border: 1px solid rgb(211, 129, 7);
+  padding: 5px;
+  color: rgb(205, 205, 5);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+}
+
+.btn-remove-token {
+  border: 1px solid rgb(162, 2, 2);
+  padding: 5px;
+  color: rgb(162, 2, 2);
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+}
+
+.desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.link-token {
+  color: rgb(13, 153, 227);
+  margin-left: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.box-table {
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 8px;
+}
+
+.box-row {
+  display: flex;
+  border: 3px solid rgb(66, 85, 95);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.table-lefth {
+  width: 40%;
+  margin-top: 5px;
+}
+
+.table-rigth {
+  display: block;
+  justify-content: end;
+  width: 60%;
+  align-content: center;
+}
+
+.box-head,
+.box-foot,
+.box-expired {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.box-foot {
+  color: rgb(8, 8, 167);
+}
+
+.box-expired {
+  color: rgb(135, 167, 8);
+}
+
+.box-head p,
+.box-foot p,
+.box-expired p {
+  margin-left: 10px;
+}
+
+.box-foot-r,
+.box-head-r {
+  display: flex;
+  justify-content: end;
+  padding: 2px;
+  justify-content: end;
+  margin-right: 2px;
+  margin-top: 1px;
+  align-items: center;
+}
+
+.box-head-r h3 {
+  font-size: 13px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.disabled,
+.enabled,
+.revoked,
+.expired {
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  justify-content: start;
+  align-items: center;
+}
+
+.disabled h3,
+.enabled h3,
+.revoked h3,
+.expired h3 {
+  font-weight: bold;
+}
+
+.span-disabled,
+.span-enabled,
+.span-revoked,
+.span-expired {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 10px;
+  font-size: 11px;
+  margin-left: 10px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.span-disabled {
+  border: 2px solid magenta;
+  color: mediumpurple;
+}
+
+.span-enabled {
+  border: 2px solid green;
+  color: rgb(81, 226, 81);
+}
+
+.span-revoked {
+  border: 2px solid red;
+  color: rgb(133, 4, 4);
+}
+
+.span-expired {
+  border: 2px solid yellow;
+  color: yellowgreen;
+}
+
+.span-disabled p,
+.span-enabled p,
+.span-revoked p,
+.span-expired p {
+  margin-left: 2px;
+}
+
+.token-info {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.link-github {
+  color: blue;
+  text-decoration: underline;
+}
+
+.link-github:hover,
+.link-token:hover {
+  color: magenta;
+}
+
+.btn-new-token:hover {
+  color: greenyellow;
+  border: 1px solid greenyellow;
+  background-color: rgb(40, 40, 40);
+}
+
+.btn-clear-token:hover {
+  color: rgb(229, 255, 0);
+  border: 1px solid rgb(185, 219, 20);
+  background-color: rgb(40, 40, 40);
+}
+
+.btn-remove-token:hover {
+  color: red;
+  border: 1px solid red;
+}
+
+.btn-new-token:disabled {
+  border: 1px solid #666;
+  color: #666;
+  cursor: not-allowed;
+}
+@media (max-width: 640px) {
+  .box-newtoken {
+    display: block;
+  }
+  .text {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .box-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-remove-token,
+  .btn-clear-token,
+  .btn-new-token {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-remove-token,
+  .btn-clear-token,
+  .btn-new-token {
+    width: 130px;
+  }
+
+  .desc {
+    text-decoration: none;
+    font-size: 12px;
+    width: 100%;
+    padding: 0;
+    height: 30px;
+  }
+
+  .box-row {
+    display: block;
+  }
+
+  .table-lefth {
+    width: 100%;
+  }
+
+  .box-head,
+  .box-foot,
+  .box-expired {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .table-rigth {
+    width: 100%;
+    justify-content: center;
+  }
+  .box-head-r h3 {
+    justify-content: start;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .disabled {
+    justify-content: start;
+    width: 100%;
+    margin-left: 10px;
+  }
+}

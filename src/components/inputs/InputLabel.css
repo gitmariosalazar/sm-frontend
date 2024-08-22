@@ -1,0 +1,62 @@
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-container {
+  position: relative;
+  background-color: black;
+}
+
+.input-field-d {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* Espacio para el icono a la derecha */
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  background-color: black;
+}
+.input-field-d:focus {
+  border: 2px solid #ccc;
+  border-color: #3498db; /* Color del borde al enfocar */
+  box-shadow: 5px 5px 5px rgba(52, 152, 219, 0.5); /* Sombra al enfocar */
+}
+.input-field-d.error {
+  border-color: #f44336; /* Color del borde en caso de error */
+}
+
+.input-field-d.with-left-icon {
+  padding-left: 40px; /* Ajuste adicional para el icono a la izquierda */
+}
+
+.icon-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.icon-input {
+  width: 25px;
+}
+
+.left-icon {
+  left: 10px; /* Posición del icono a la izquierda */
+}
+
+.right-icon {
+  right: 10px; /* Posición del icono a la derecha */
+}
+
+.error-message {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #f44336; /* Color del mensaje de error */
+}

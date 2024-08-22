@@ -1,0 +1,194 @@
+.footer {
+  background: #00020e;
+}
+
+.footer .heading {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #fff;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.box {
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+
+ul a {
+  display: block;
+  color: grey;
+  font-size: 16px;
+  line-height: 2.3;
+  font-weight: bold;
+}
+
+ul a:hover {
+  color: blueviolet;
+}
+
+.box h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.company-info {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.contact-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact-text a {
+  margin-left: 5px;
+}
+
+.contact-text:hover {
+  color: magenta;
+}
+
+.footer .box-container .box p {
+  color: grey;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.footer .box-container .box {
+  margin-top: 10px;
+  display: inline-block;
+  color: grey;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+form {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: transparent;
+}
+
+form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+  padding: 5px 5px;
+}
+
+form button {
+  color: green;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: magenta;
+}
+
+.social-icons-company {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-icons-company img {
+  margin: 10px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon {
+  width: 30px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+}
+
+.underline {
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(to left, #00093c, #581904);
+  top: 5px;
+  left: 0;
+  z-index: 0;
+}
+
+.underline span {
+  width: 150px;
+  height: 100%;
+  background: #0c2d48;
+  border-radius: 2px;
+  top: 5px;
+  bottom: auto;
+  left: 10px;
+  animation: moving 2s linear infinite;
+  z-index: 2;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*-----------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}

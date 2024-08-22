@@ -1,0 +1,28 @@
+.labels-info {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Ajusta el tamaño mínimo según tus necesidades */
+  gap: 10px; /* Espacio entre columnas */
+  padding: 10px;
+}
+
+.list-label {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-label li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}

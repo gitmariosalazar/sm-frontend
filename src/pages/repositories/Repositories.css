@@ -1,0 +1,41 @@
+.task-box-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.task-box-right {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(183, 157, 157, 0.2);
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.task-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+@media (max-width: 1200px) {
+  .task-box-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .task-box-right {
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .icon-task {
+    width: 600px;
+  }
+}
