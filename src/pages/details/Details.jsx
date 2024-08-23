@@ -118,7 +118,11 @@ const Details = () => {
                           {repos.url}
                         </a>
                         <h4>License Info</h4>
-                        <p>{repos.licenseInfo.name}</p>
+                        <p>
+                          {repos.licenseInfo
+                            ? repos.licenseInfo.name
+                            : "No License"}
+                        </p>
                       </div>
                     </div>
                     <div className="det-cont-right">
@@ -145,7 +149,9 @@ const Details = () => {
                               <p>Primary Language</p>
                             </div>
                             <p className="value-counts">
-                              {repos.primaryLanguage.name}
+                              {repos.primaryLanguage
+                                ? repos.primaryLanguage.name
+                                : "No Primary Language"}
                             </p>
                           </div>
                         </div>
@@ -217,10 +223,17 @@ const Details = () => {
                   <div className="pie-chart">
                     <div className="charts">
                       <DonutChartHero
-                        title={repos.primaryLanguage.name}
+                        title={
+                          repos.primaryLanguage
+                            ? repos.primaryLanguage
+                            : "No primary Language"
+                        }
                         data={datahero}
                       />
-                      <DonutChartHero title="Languages" data={dataLanguages} />
+                      <DonutChartHero
+                        title={"Languages"}
+                        data={dataLanguages}
+                      />
                     </div>
                   </div>
                   <div className="graphics-d">

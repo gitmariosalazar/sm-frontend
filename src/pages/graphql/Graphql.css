@@ -190,13 +190,26 @@
   color: magenta;
 }
 
-@media (max-width: 1070px) {
-  .box-row-g {
-    display: block;
+.github-container-graphql {
+  width: 90%;
+}
+
+@media (max-width: 1290px) {
+  .github-container-graphql {
+    width: 100%;
   }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 1170px) {
+  .box-row-g {
+    display: block;
+  }
+  .github-container-graphql {
+    width: 100%;
+  }
+}
+
+@media (max-width: 685px) {
   .fi {
     display: block;
   }

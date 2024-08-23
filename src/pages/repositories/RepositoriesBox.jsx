@@ -43,7 +43,11 @@ const RepositoriesBox = ({ repositories }) => {
                 <div className="box-info">
                   <div className="repositories-info">
                     <h3>Primary Language: </h3>
-                    <p>{repo.primaryLanguage["name"]}</p>
+                    <p>
+                      {repo.primaryLanguage
+                        ? repo.primaryLanguage["name"]
+                        : "No Primary Language"}
+                    </p>
                   </div>
                   <div className="repositories-info">
                     <h3>Owner:</h3>

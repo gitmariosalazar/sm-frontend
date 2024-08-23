@@ -186,7 +186,12 @@ const Graphql = () => {
                       <div className="box-info-explorer">
                         <div className="repositories-info-explorer">
                           <h3>Primary Language: </h3>
-                          <p>{repo.primaryLanguage["name"]}</p>
+                          <p>
+                            {" "}
+                            {repo.primaryLanguage
+                              ? repo.primaryLanguage["name"]
+                              : "No Name"}
+                          </p>
                         </div>
                         <div className="repositories-info-explorer">
                           <h3>Owner:</h3>
@@ -266,11 +271,7 @@ const Graphql = () => {
                                   ))}
                               </>
                             ) : (
-                              <Empty
-                                title={
-                                  "No projects yet, please search projects language name"
-                                }
-                              />
+                              <li className="list-item">No Languages</li>
                             )}
                           </ul>
                         </div>

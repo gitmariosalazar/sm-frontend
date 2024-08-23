@@ -21,8 +21,12 @@ export const DonutChartHero = ({ title, data = [] }) => {
     console.error("Data prop is not an array:", data);
     return null;
   }
+  if (typeof title !== "string") {
+    console.error("Title prop is not a string:", title);
+    return null; // O renderiza un valor predeterminado
+  }
 
-  const totalValue = data.reduce((sum, entry) => sum + entry.value, 0);
+  const totalValue = data.reduce((sum, entry) => sum + (entry.value || 0), 0);
 
   const colors = [
     "pink",
@@ -83,9 +87,17 @@ export const DonutChartHero = ({ title, data = [] }) => {
                       marginRight: "8px",
                     }}
                   />
-                  {hero.name == "GraphQL"
-                    ? "" + hero.name + " " + hero.value
-                    : "" + hero.name}
+                  <span>
+                    {typeof hero.name === "string"
+                      ? hero.name === "GraphQL"
+                        ? `${hero.name} ${
+                            typeof hero.value === "number"
+                              ? hero.value.toFixed(2)
+                              : ""
+                          }`
+                        : hero.name
+                      : "Invalid name"}
+                  </span>
                 </li>
               ))
             ) : (
